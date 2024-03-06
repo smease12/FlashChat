@@ -136,7 +136,7 @@ import UIKit
     
     private func setTextWithTypingAnimation(_ typedText: String, _ attributes: Dictionary<NSAttributedStringKey, Any>?, _ charInterval: TimeInterval, _ initial: Bool, _ dispatchID: Int) {
         
-        guard typedText.characters.count > 0 && currentDispatchID == dispatchID else {
+        guard !typedText.isEmpty && currentDispatchID == dispatchID else {
             typingOver = true
             typingStopped = false
             return
