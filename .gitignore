@@ -6,4 +6,4 @@ DerivedData/
 .swiftpm/configuration/registries.json
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
-GoogleService-Info.plist
+"/Flash Chat iOS13/GoogleService-Info.plist"
