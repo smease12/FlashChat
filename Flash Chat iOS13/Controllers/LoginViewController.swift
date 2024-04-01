@@ -7,7 +7,9 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
@@ -22,7 +24,7 @@ class LoginViewController: UIViewController {
                     print(e)
                 }
                 else{
-                    self.performSegue(withIdentifier: "LoginToChat", sender: self)
+                    self?.performSegue(withIdentifier: "LoginToChat", sender: self)
                 }
             }
         }
