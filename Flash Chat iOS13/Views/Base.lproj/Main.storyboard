@@ -343,7 +343,9 @@
                             <constraint firstItem="S6L-hg-cne" firstAttribute="top" secondItem="6YX-ca-E8f" secondAttribute="top" id="sQt-L5-8LV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Q5u-eL-Bgp"/>
+                    <navigationItem key="navigationItem" id="Q5u-eL-Bgp">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="vVB-aw-bqZ"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextfield" destination="UWj-GQ-Vph" id="INS-Xk-EA9"/>
                         <outlet property="tableView" destination="S6L-hg-cne" id="dTJ-K9-WAe"/>
@@ -394,7 +396,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
