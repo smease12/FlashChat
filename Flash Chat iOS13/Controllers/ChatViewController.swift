@@ -32,6 +32,14 @@ class ChatViewController: UIViewController {
         navigationItem.hidesBackButton = true
         
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
+        
+        loadMessages()
+    }
+    
+    func loadMessages(){
+        messages = []
+        
+        db.collection(K.FStore.collectionName)
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
