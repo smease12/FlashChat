@@ -45,7 +45,11 @@ class ChatViewController: UIViewController {
             } else{
                 if let snapshotDocuments = querySnapshot?.documents{
                     for doc in snapshotDocuments{
-                        print(doc.data())
+                        let data = doc.data()
+                        if let messageSender = data[K.Fstore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String{
+                            let newMessage = Message(sender: messageSender, body: messageBody)
+                            messages.append(newMessage)
+                        }
                     }
                 }
             }
