@@ -33,7 +33,9 @@ class ChatViewController: UIViewController {
     
     func loadMessages(){
         
-        db.collection(K.FStore.collectionName).addSnapshotListener { (querySnapshot, error) in
+        db.collection(K.FStore.collectionName)
+            .order(by: K.FStore.dateField)
+            .addSnapshotListener { (querySnapshot, error) in
             
             self.messages = []
             
