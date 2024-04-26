@@ -74,6 +74,7 @@ class ChatViewController: UIViewController {
                 }
                 else{
                     print("Successfully saved data")
+                    self.messageTextfield.text = ""
                 }
             }
         }
