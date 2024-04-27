@@ -357,6 +357,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Ui-za-cBx">
                         <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="BrandBlue"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
